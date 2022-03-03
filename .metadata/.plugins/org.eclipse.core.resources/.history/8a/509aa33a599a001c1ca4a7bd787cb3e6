@@ -1,0 +1,23 @@
+package ListaExercicios;
+
+import java.util.Scanner;
+
+public class Exemplo1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor de X: ");
+		int X = sc.nextInt();
+		
+		
+		for (int i=1; i < X ; i++) {
+			System.out.println(X);
+		}
+		
+		
+		sc.close();
+	}
+
+}

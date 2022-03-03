@@ -1,0 +1,32 @@
+package ListaExercicios;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo4 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Escreva o número de casos: ");
+		int N = sc.nextInt();
+				
+		for (int i=0; i<N; i++) {
+			
+			System.out.println("Escreva 2 números: ");
+			double a = sc.nextDouble();
+			double b = sc.nextDouble();
+			
+			if (b == 0) {
+				System.out.println("divisao impossível");
+			}else{
+				double divisao = (a/b);
+				System.out.printf("%.1f%n", divisao);}
+		}
+		
+		sc.close();
+	}
+
+}
